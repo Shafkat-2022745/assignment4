@@ -1,0 +1,140 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Open Sans', sans-serif;
+    background-color: #f5f5f5;
+    color: #333;
+    line-height: 1.6;
+  }
+  
+  h1 {
+    font-size: 2.5rem;
+    text-align: center;
+    padding: 30px 0;
+    background-color: #2c3e50;
+    color: #fff;
+  }
+  
+  .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 20px;
+    margin: 20px auto;
+  }
+  
+  .weather-input {
+    width: 100%;
+    max-width: 500px;
+    text-align: center;
+  }
+  
+  .city-input {
+    width: 70%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+  }
+  
+  .search-btn,
+  .location-btn {
+    width: 40%;
+    padding: 10px;
+    margin: 10px 0;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    color: #fff;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .search-btn {
+    background-color: #3498db;
+  }
+  
+  .location-btn {
+    background-color: #2ecc71;
+  }
+  
+  .separator {
+    margin: 20px 0;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .separator::before,
+  .separator::after {
+    content: '';
+    flex: 1;
+    border-bottom: 1px solid #ccc;
+  }
+  
+  .separator::before {
+    margin-right: 10px;
+  }
+  
+  .separator::after {
+    margin-left: 10px;
+  }
+  
+  .weather-data {
+    width: 100%;
+    max-width: 800px;
+    margin-top: 20px;
+  }
+  
+  .current-weather,
+  .days-forecast {
+    background-color: #fff;
+    border-radius: 8px;
+    padding: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .current-weather h2,
+  .days-forecast h2 {
+    font-size: 1.8rem;
+    margin-bottom: 15px;
+    color: #333;
+  }
+  
+  .weather-cards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+  }
+  
+  .card {
+    background-color: #f0f0f0;
+    border-radius: 8px;
+    padding: 15px;
+    text-align: center;
+    width: calc(33.33% - 20px);
+    max-width: 250px;
+  }
+  
+  .card h3 {
+    font-size: 1.3rem;
+    margin-bottom: 10px;
+    color: #333;
+  }
+  
+  .card h6 {
+    font-size: 1rem;
+    margin-bottom: 8px;
+    color: #555;
+  }
+  
